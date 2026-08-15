@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Sparkles, Float, MeshDistortMaterial, OrbitControls } from '@react-three/drei';
+import { Sparkles, Float, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
 const FloatingShapes: React.FC = () => {

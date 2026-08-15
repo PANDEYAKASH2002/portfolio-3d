@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { InteractiveAvatar3D } from '../components/3d/InteractiveAvatar3D';
 import { personalInfo, aboutStats } from '../data/personalData';
 import { GlassCard } from '../components/ui/GlassCard';
-import { HiSparkles, HiCode, HiServer } from 'react-icons/hi';
+import {  HiCode, HiServer } from 'react-icons/hi';
 
 interface CounterProps {
   value: number;

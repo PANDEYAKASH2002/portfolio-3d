@@ -1,17 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React, { useState, useRef } from 'react';
+import { motion, useScroll } from 'framer-motion';
 import { projectsData } from '../data/projectsData';
 import { GlassCard } from '../components/ui/GlassCard';
-import { HiExternalLink, HiSparkles, HiCheckCircle, HiViewGrid } from 'react-icons/hi';
+import { HiExternalLink, HiSparkles, HiCheckCircle } from 'react-icons/hi';
 import { SiGithub } from 'react-icons/si';
 
 export const ProjectsSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isGridMode, setIsGridMode] = useState(true); // Default to grid mode
   const [flippedCardId, setFlippedCardId] = useState<string | null>(null);
 
   // Track scroll progress inside container
-  const { scrollYProgress } = useScroll({
+  const {  } = useScroll({
     target: containerRef,
     offset: ['start start', 'end end'],
   });
@@ -76,7 +75,7 @@ const ProjectCardItem: React.FC<ProjectCardItemProps> = ({
   project,
   index,
   isFlipped,
-  onFlip,
+
   onHover,
 }) => {
   return (
